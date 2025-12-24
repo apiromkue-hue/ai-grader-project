@@ -5,7 +5,10 @@ Home Page - ระบบตรวจโครงงานอัจฉริย�
 Intelligent Project Grading System with Artificial Intelligence
 """
 
-import streamlit as st
+import streamlit as st  # บรรทัดนี้ปกติน่าจะมีอยู่แล้วข้างบน
+
+# แก้บรรทัด API KEY เป็นแบบนี้ครับ 👇
+API_KEY = st.secrets["GOOGLE_API_KEY"]
 
 # ========== PAGE CONFIG ==========
 st.set_page_config(
@@ -376,3 +379,4 @@ with col_footer2:
         </div>
     </div>
     """, unsafe_allow_html=True)
+
