@@ -1,0 +1,401 @@
+/* K-Minimal Design System - CSS Variables & Specifications */
+/* Created: December 14, 2025 */
+
+:root {
+  /* Color Palette - K-Minimal Pastel Pink */
+  --color-primary-pink: #E8B4D4;
+  --color-secondary-pink: #D4A5C8;
+  --color-light-pink: #F0D9E8;
+  --color-accent-dark: #B8879F;
+  
+  /* Neutral Colors */
+  --color-white: #FFFFFF;
+  --color-off-white: #F5F5F5;
+  --color-light-bg: #F5E8F0;
+  --color-dark-text: #333333;
+  
+  /* Typography */
+  --font-family: 'Prompt', sans-serif;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  
+  /* Border Radius */
+  --border-radius-small: 8px;
+  --border-radius-medium: 10px;
+  --border-radius-large: 12px;
+  --border-radius-xlarge: 15px;
+  
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-lg: 20px;
+  --spacing-xl: 24px;
+  
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(232, 180, 212, 0.1);
+  --shadow-md: 0 4px 15px rgba(232, 180, 212, 0.2);
+  --shadow-lg: 0 8px 25px rgba(232, 180, 212, 0.3);
+  
+  /* Transitions */
+  --transition-default: all 0.3s ease;
+  --transition-slow: all 0.5s ease;
+}
+
+/* ============================================
+   TYPOGRAPHY STYLES
+   ============================================ */
+
+.title-h1 {
+  color: var(--color-accent-dark);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-semibold);
+  font-size: 32px;
+  margin-bottom: var(--spacing-lg);
+}
+
+.title-h2 {
+  color: var(--color-secondary-pink);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-semibold);
+  font-size: 24px;
+}
+
+.title-h3 {
+  color: var(--color-secondary-pink);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-semibold);
+  font-size: 20px;
+}
+
+.body-text {
+  color: var(--color-dark-text);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-regular);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.secondary-text {
+  color: var(--color-accent-dark);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-medium);
+  font-size: 14px;
+}
+
+/* ============================================
+   BUTTON STYLES
+   ============================================ */
+
+.btn-primary {
+  background: linear-gradient(90deg, var(--color-primary-pink) 0%, var(--color-secondary-pink) 100%);
+  color: white;
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-semibold);
+  border-radius: var(--border-radius-large);
+  padding: var(--spacing-md) var(--spacing-xl);
+  border: none;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-default);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+
+.btn-primary:active {
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background: linear-gradient(90deg, var(--color-primary-pink) 0%, var(--color-light-pink) 100%);
+  color: var(--color-accent-dark);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-semibold);
+  border: 2px solid var(--color-secondary-pink);
+  border-radius: var(--border-radius-large);
+  padding: var(--spacing-md) var(--spacing-xl);
+  cursor: pointer;
+  transition: var(--transition-default);
+}
+
+.btn-secondary:hover {
+  background: var(--color-light-pink);
+  border-color: var(--color-primary-pink);
+}
+
+/* ============================================
+   CARD STYLES
+   ============================================ */
+
+.card {
+  background: white;
+  border: 2px solid var(--color-light-pink);
+  border-radius: var(--border-radius-large);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-default);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-primary-pink);
+}
+
+.card-primary {
+  background: linear-gradient(135deg, white 0%, var(--color-light-bg) 100%);
+  border: 2px solid var(--color-light-pink);
+}
+
+/* ============================================
+   INPUT STYLES
+   ============================================ */
+
+.input-field {
+  border: 2px solid var(--color-light-pink);
+  border-radius: var(--border-radius-medium);
+  padding: var(--spacing-md) var(--spacing-lg);
+  font-family: var(--font-family);
+  background-color: white;
+  transition: var(--transition-default);
+}
+
+.input-field:focus {
+  border-color: var(--color-primary-pink);
+  box-shadow: 0 0 10px rgba(232, 180, 212, 0.4);
+  outline: none;
+}
+
+.input-field::placeholder {
+  color: rgba(51, 51, 51, 0.5);
+}
+
+/* ============================================
+   ALERT STYLES
+   ============================================ */
+
+.alert {
+  border-radius: var(--border-radius-large);
+  border: 2px solid;
+  padding: var(--spacing-lg);
+  font-family: var(--font-family);
+}
+
+.alert-success {
+  background-color: #E6F9E6;
+  color: #2D5A2D;
+  border-color: #B3E6B3;
+}
+
+.alert-info {
+  background-color: #E8F4F8;
+  color: #1A4D5C;
+  border-color: #B3D9E6;
+}
+
+.alert-warning {
+  background-color: #FFF8E6;
+  color: #8B6914;
+  border-color: #FFE699;
+}
+
+.alert-error {
+  background-color: #FFE8E8;
+  color: #8B2D2D;
+  border-color: #FF9999;
+}
+
+/* ============================================
+   TAB STYLES
+   ============================================ */
+
+.tab-inactive {
+  color: var(--color-accent-dark);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-semibold);
+  border-radius: var(--border-radius-large) var(--border-radius-large) 0 0;
+  transition: var(--transition-default);
+}
+
+.tab-inactive:hover {
+  background-color: rgba(232, 180, 212, 0.15);
+  color: var(--color-secondary-pink);
+}
+
+.tab-active {
+  background: linear-gradient(90deg, var(--color-primary-pink) 0%, var(--color-secondary-pink) 100%);
+  color: white;
+  font-weight: var(--font-weight-semibold);
+  border-bottom: 3px solid var(--color-secondary-pink);
+}
+
+/* ============================================
+   METRIC STYLES
+   ============================================ */
+
+.metric-container {
+  background: linear-gradient(135deg, white 0%, var(--color-light-bg) 100%);
+  border: 2px solid var(--color-light-pink);
+  border-radius: var(--border-radius-xlarge);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-default);
+}
+
+.metric-container:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-primary-pink);
+}
+
+/* ============================================
+   DIVIDER STYLES
+   ============================================ */
+
+.divider {
+  border: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--color-primary-pink) 0%, var(--color-secondary-pink) 100%);
+  margin: var(--spacing-lg) 0;
+}
+
+/* ============================================
+   GRADIENT BACKGROUNDS
+   ============================================ */
+
+.bg-gradient-main {
+  background: linear-gradient(135deg, var(--color-light-pink) 0%, var(--color-primary-pink) 100%);
+}
+
+.bg-gradient-sidebar {
+  background: linear-gradient(180deg, white 0%, var(--color-light-bg) 100%);
+  border-right: 2px solid var(--color-primary-pink);
+}
+
+.bg-gradient-button {
+  background: linear-gradient(90deg, var(--color-primary-pink) 0%, var(--color-secondary-pink) 100%);
+}
+
+/* ============================================
+   ANIMATION STYLES
+   ============================================ */
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hover-lift {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+.animate-slide-in {
+  animation: slideIn 0.3s ease;
+}
+
+.animate-hover-lift {
+  animation: hover-lift 0.3s ease;
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+
+.text-primary {
+  color: var(--color-primary-pink);
+}
+
+.text-secondary {
+  color: var(--color-secondary-pink);
+}
+
+.text-accent {
+  color: var(--color-accent-dark);
+}
+
+.text-light {
+  color: var(--color-off-white);
+}
+
+.rounded-sm {
+  border-radius: var(--border-radius-small);
+}
+
+.rounded-md {
+  border-radius: var(--border-radius-medium);
+}
+
+.rounded-lg {
+  border-radius: var(--border-radius-large);
+}
+
+.rounded-xl {
+  border-radius: var(--border-radius-xlarge);
+}
+
+.shadow-sm {
+  box-shadow: var(--shadow-sm);
+}
+
+.shadow-md {
+  box-shadow: var(--shadow-md);
+}
+
+.shadow-lg {
+  box-shadow: var(--shadow-lg);
+}
+
+/* ============================================
+   RESPONSIVE ADJUSTMENTS
+   ============================================ */
+
+@media (max-width: 768px) {
+  .title-h1 {
+    font-size: 24px;
+  }
+  
+  .title-h2 {
+    font-size: 20px;
+  }
+  
+  .btn-primary,
+  .btn-secondary {
+    padding: var(--spacing-md) var(--spacing-lg);
+  }
+}
+
+/* ============================================
+   ACCESSIBILITY
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-dark-text: #F0F0F0;
+    --color-white: #1A1A1A;
+  }
+}
