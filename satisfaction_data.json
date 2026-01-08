@@ -1,0 +1,52 @@
+{
+  "surveys": [
+    {
+      "id": "SURVEY_20251222_125821_1",
+      "timestamp": "2025-12-22T12:58:21.186609",
+      "user_type": "student",
+      "username": "student1",
+      "name": "นักเรียน 1",
+      "responses": {
+        "usability_easy_to_use": 5,
+        "usability_menu_layout": 5,
+        "usability_upload_ease": 5,
+        "benefits_understanding": 5,
+        "benefits_improvement": 5,
+        "benefits_learning": 5,
+        "benefits_confidence": 5,
+        "overall_satisfaction": 5,
+        "overall_recommendation": 5,
+        "suggestion": "-"
+      },
+      "created_at": "2025-12-22 12:58:21"
+    },
+    {
+      "id": "SURVEY_20251223_130547_2",
+      "timestamp": "2025-12-23T13:05:47.216015",
+      "user_type": "teacher",
+      "username": "teacher",
+      "name": "อาจารย์",
+      "responses": {
+        "usability_easy_to_use": 4,
+        "usability_menu_layout": 3,
+        "usability_performance": 4,
+        "effectiveness_accuracy": 5,
+        "effectiveness_feedback_quality": 4,
+        "effectiveness_time_saving": 5,
+        "effectiveness_feedback_improvement": 5,
+        "adoption_confidence": 4,
+        "adoption_recommendation": 5,
+        "overall_satisfaction": 5,
+        "suggestion": ""
+      },
+      "created_at": "2025-12-23 13:05:47"
+    }
+  ],
+  "metadata": {
+    "created_at": "2025-12-22T12:43:34.217887",
+    "total_responses": 2,
+    "teacher_responses": 1,
+    "student_responses": 1,
+    "last_updated": "2025-12-23T13:05:47.216015"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "name": "ระบบตรวจโครงงาน AI",
+  "short_name": "AI Grader",
+  "description": "ระบบตรวจความสอดคล้องโครงงาน โดยใช้ Google Generative AI (Gemini)",
+  "start_url": "https://project-ai.triamudomsouth.ac.th/",
+  "scope": "https://project-ai.triamudomsouth.ac.th/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#E8B4D4",
+  "background_color": "#FFFFFF",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect fill='%23E8B4D4' width='192' height='192'/><text x='50%' y='50%' font-size='120' fill='white' text-anchor='middle' dominant-baseline='middle' font-weight='bold'>🎓</text></svg>",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect fill='%23E8B4D4' width='512' height='512'/><text x='50%' y='50%' font-size='320' fill='white' text-anchor='middle' dominant-baseline='middle' font-weight='bold'>🎓</text></svg>",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": [
+    "education",
+    "productivity"
+  ],
+  "screenshots": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 540 720'><rect fill='%23D4A5C8' width='540' height='720'/><text x='270' y='360' font-size='48' fill='white' text-anchor='middle' dominant-baseline='middle' font-weight='bold'>AI Grader</text></svg>",
+      "sizes": "540x720",
+      "type": "image/svg+xml",
+      "form_factor": "narrow"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "วิเคราะห์โครงงาน",
+      "short_name": "วิเคราะห์",
+      "description": "อัปโหลดไฟล์โครงงานเพื่อวิเคราะห์",
+      "url": "/?tab=analysis",
+      "icons": [
+        {
+          "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect fill='%23E8B4D4' width='192' height='192'/><text x='50%' y='50%' font-size='96' fill='white' text-anchor='middle' dominant-baseline='middle'>📂</text></svg>",
+          "sizes": "192x192",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "ดูประวัติ",
+      "short_name": "ประวัติ",
+      "description": "ดูประวัติการวิเคราะห์ทั้งหมด",
+      "url": "/?tab=history",
+      "icons": [
+        {
+          "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect fill='%23D4A5C8' width='192' height='192'/><text x='50%' y='50%' font-size='96' fill='white' text-anchor='middle' dominant-baseline='middle'>📜</text></svg>",
+          "sizes": "192x192",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "สถิติ",
+      "short_name": "สถิติ",
+      "description": "ดูสถิติและรายงาน",
+      "url": "/?tab=statistics",
+      "icons": [
+        {
+          "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect fill='%23F0D9E8' width='192' height='192'/><text x='50%' y='50%' font-size='96' fill='%23B8879F' text-anchor='middle' dominant-baseline='middle'>📊</text></svg>",
+          "sizes": "192x192",
+          "type": "image/svg+xml"
+        }
+      ]
+    }
+  ],
+  "share_target": {
+    "action": "/share",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "files": [
+        {
+          "name": "file",
+          "accept": [
+            "application/pdf",
+            "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+          ]
+        }
+      ]
+    }
+  },
+  "prefer_related_applications": false
+}

@@ -1,0 +1,54 @@
+{
+  "users": [
+    {
+      "id": "user_001",
+      "username": "student1",
+      "password": "student123",
+      "name": "นักเรียน 1",
+      "role": "student",
+      "status": "active",
+      "created_at": "2025-12-16 10:00:00",
+      "last_login": "2026-01-07 12:13:47"
+    },
+    {
+      "id": "user_002",
+      "username": "teacher",
+      "password": "teacher123",
+      "name": "อาจารย์",
+      "role": "teacher",
+      "status": "active",
+      "created_at": "2025-12-16 10:00:00",
+      "last_login": "2025-12-23 13:05:25"
+    },
+    {
+      "id": "user_003",
+      "username": "admin",
+      "password": "admin123",
+      "name": "ผู้ดูแลระบบ",
+      "role": "admin",
+      "status": "active",
+      "created_at": "2025-12-16 10:00:00",
+      "last_login": null
+    },
+    {
+      "id": "user_004",
+      "username": "sigma",
+      "password": "03062557",
+      "name": "จารุพิชญา กึกก้อง",
+      "role": "student",
+      "status": "active",
+      "created_at": "2025-12-16 12:19:44",
+      "last_login": null
+    },
+    {
+      "id": "user_005",
+      "username": "cmos",
+      "password": "10092559",
+      "name": "จารุกัญญา กึกก้อง",
+      "role": "student",
+      "status": "active",
+      "created_at": "2025-12-18 14:14:37",
+      "last_login": "2026-01-07 12:39:33"
+    }
+  ]
+}
