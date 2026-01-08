@@ -6,7 +6,7 @@ Intelligent Project Grading System with Artificial Intelligence
 """
 
 import streamlit as st
-
+API_KEY = st.secrets["GOOGLE_API_KEY"]
 # ========== PAGE CONFIG ==========
 st.set_page_config(
     page_title="ระบบตรวจโครงงานอัจฉริยะด้วย AI",
@@ -319,7 +319,7 @@ with col2:
                 <p><strong style="color: #B8879F;">1. เข้าสู่ระบบ:</strong> ใช้บัญชี Admin เพื่อเข้าถึงส่วนจัดการ</p>
                 <p><strong style="color: #B8879F;">2. จัดการผู้ใช้:</strong> เพิ่ม/ลบ/แก้ไขข้อมูลผู้ใช้ในระบบ</p>
                 <p><strong style="color: #B8879F;">3. ดูสถิติระบบ:</strong> ติดตามการใช้งานและประสิทธิภาพของระบบ</p>
-                <p><strong style="color: #B8879F;">4. ตั้งค่าระบบ:</strong> กำหนดค่าต่างๆ เช่น API Key, ข้อความแจ้งเตือน</p>
+                <p><strong style="color: #B8879F;">4. ตั้งค่าระบบ:</strong> กำหนดค่าต่างๆ เช่น  Key, ข้อความแจ้งเตือน</p>
                 <p><strong style="color: #B8879F;">5. ดูรายงาน:</strong> สร้างและส่งออกรายงานการใช้งานระบบ</p>
             </div>
         </div>
@@ -376,3 +376,4 @@ with col_footer2:
         </div>
     </div>
     """, unsafe_allow_html=True)
+
